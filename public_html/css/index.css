@@ -1,0 +1,186 @@
+@import url(https://use.fontawesome.com/releases/v5.0.6/css/all.css);
+html,body {
+    padding: 0;
+    height: 100%;
+    margin: 0px;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+#offcanvas-left,
+#offcanvas-right {
+    flex: 0 0 280px;
+    background-color: #111;
+    color: white;
+    transition-duration: .5s;
+}
+#offcanvas-left.hide {
+    margin-left: -280px;
+}
+#offcanvas-right.hide {
+    margin-right: -280px;
+}
+.togglebar {
+    background-color: #232323;
+    flex: 0 0 50px;
+}
+.toggle i {
+    height: 80px;
+    font-size: 1.4em;
+    width: 100%;
+    color: blueviolet ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #111
+}
+.toggle i:hover {
+    color: gold;
+}
+
+header {
+    background-color: black;
+    flex: 0 0 20px;
+    color: white;
+    /* justify-content: center; */
+    padding: 20px;
+}
+header nav {
+    /* background-color: rgba(255,255,255, 0.1); */
+    /* border-radius: 5px;
+    display: flex;
+    flex-grow: 1;
+    align-items: left;
+    justify-content: left;
+    padding: 10px; */
+    position: relative;
+    /* width: calc(100% - 60px); */
+    width: 100%;
+    margin-left: -10px;
+    padding: 0px 0; /* this controls the width of nav bar */
+    background: black;
+    z-index: 1;
+    text-align: right;
+    position: fixed;
+    top: 0;
+    padding-right: 10%;
+}
+footer {
+    background-color: gold;
+    flex: 0 0 80px;
+}
+body > section {
+    flex: 1 1 auto;
+    flex-direction: row;
+    height: 100%;
+    display: grid;
+    justify-content: top;
+}
+section > main {
+    flex-grow: 1;
+    flex-basis: 100%;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    overflow: auto;
+}
+aside {
+    background-color: lightblue;
+    height: 100%;
+
+    flex-grow: 0;
+    /* flex-basis: 50%; */
+    justify-content: top;
+    align-items: left;
+    display: flex;
+}
+article {
+    border-radius: 5px;
+    background-color: #efefef;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#offcanvas-left,
+#offcanvas-right,
+header,
+footer {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+
+body > section{
+    display: flex;
+    justify-content: center;
+
+}
+
+#offcanvas-left,
+#offcanvas-right,
+footer,
+header,
+main article {
+    align-items: center;
+}
+
+main article{
+    text-align: left;
+}
+
+img {
+    max-width: 400px;
+    max-height: 100%;
+}
+
+.column-left {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.name-portrait{
+
+    /* width: 200px; */
+
+    /* right: 0px; */
+    top: 0px;
+    /* float: right; */
+    /* width: 60%; */
+    padding: 5px;
+    border: 1px solid white;
+}
+
+/* header navigation */
+.menu-area li {
+  display: inline-block;
+}
+
+.menu-area a {
+  color: #fff;
+  font-weight: 300;
+  letter-spacing: 1px;
+  /* text-transform: uppercase; */
+  display: block;
+  padding: 0 25px;
+  font-size: 20px;
+  line-height: 30px;
+  position: relative;
+  /* z-index: 1; */
+}
+.menu-area a:hover {
+  background: black;
+  color: white;
+}
+
+.menu-area a:hover:after {
+  transform: translateY(-50%) rotate(-35deg);
+}
+
+.social-icons{
+
+}
